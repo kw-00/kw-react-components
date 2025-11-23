@@ -1,0 +1,130 @@
+:root {
+    --size-3xs: 1rem;
+    --size-2xs: 1.5rem;
+    --size-xs: 2.25rem;
+    --size-s: 3.5rem;
+    --size-sm: 5rem;
+    --size-m: 7.5rem;
+    --size-ml: 11.5rem;
+    --size-l: 17rem;
+    --size-xl: 26rem;
+    --size-2xl: 39rem;
+    --size-3xl: 58rem;
+    --size-auto: auto;
+
+    --padding-3xs: 0.25rem;
+    --padding-2xs: 0.375rem;
+    --padding-xs: 0.55rem;
+    --padding-s: 0.875rem;
+    --padding-sm: 1.25rem;
+    --padding-m: 1.875rem;
+    --padding-ml: 2.875rem;
+    --padding-l: 4.25rem;
+    --padding-xl: 6.5rem;
+    --padding-2xl: 9.75rem;
+    --padding-3xl: 14.5rem;
+    --padding-4xl: 21.75rem;
+    --padding-5xl: 32.625rem;
+
+    --border-width-xs: 0.025rem;
+    --border-width-s: 0.05rem;
+    --border-width-m: 0.1rem;
+    --border-width-l: 0.2rem;
+    --border-width-xl: 0.4rem;
+
+    --border-radius-0: 0rem;
+    --border-radius-3xs: 0.0125rem;
+    --border-radius-2xs: 0.025rem;
+    --border-radius-xs: 0.05rem;
+    --border-radius-s: 0.1rem;
+    --border-radius-sm: 0.2rem;
+    --border-radius-m: 0.4rem;
+    --border-radius-ml: 0.8rem;
+    --border-radius-l: 1.6rem;
+    --border-radius-xl: 3.2rem;
+    --border-radius-2xl: 6.4rem;
+    --border-radius-3xl: 12.8rem;
+    --border-radius-full: 9999rem;
+
+
+    --font-3xs: 0.65rem;
+    --font-2xs: 0.7rem;
+    --font-xs: 0.75rem;
+    --font-s: 0.8rem;
+    --font-sm: 0.9rem;
+    --font-m: 1rem;
+    --font-ml: 1.1rem;
+    --font-l: 1.2rem;
+    --font-xl: 1.3rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.7rem;
+    --font-4xl: 2rem;
+    --font-5xl: 2.5rem;
+    --font-6xl: 3rem;
+    --font-7xl: 4rem;
+}
+
+
+[data-theme="dark"]:root {
+    --background: rgb(0 0 0);
+
+    /* Button-Primary */
+    --button-primary-text: rgb(0 0 0);
+    --button-primary: rgb(255, 255, 255);
+    --button-primary-hover: rgb(219, 219, 219);
+    --button-primary-active: rgb(194, 194, 194);
+}
+
+html, body, #root {
+    display: flex;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    background-color: var(--background);
+}
+
+*:not(head) {
+    position: relative;
+    padding: 0rem;
+}
+
+.fit-to-parent {
+    position: absolute;
+    inset: 0;
+}
+
+/* Containers */
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    background-color: var(--background);
+}
+
+
+/* Buttons */
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-primary {
+    color: var(--button-primary-text);
+    background-color: var(--button-primary);
+}
+
+.button-wrapper:hover .button-primary {
+    background-color: var(--button-primary-hover);
+}
+
+.button-wrapper:active .button-primary {
+    background-color: var(--button-primary-active);
+}
